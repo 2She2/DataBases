@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<dir name="Windows">
+  <dir name="ContentStore">
+    <dir name="en-US">
+      <file name="art.mshc" />
+      <file name="artnoloc.mshc" />
+      <file name="clientserver.mshc" />
+      <file name="language.mshc" />
+      <file name="media.mshc" />
+      <file name="noarm.mshc" />
+      <file name="resources.mshc" />
+      <file name="windowsclient.mshc" />
+    </dir>
+  </dir>
+  <dir name="IndexStore">
+    <dir name="en-US">
+      <file name="art.mshi" />
+      <file name="artnoloc.mshi" />
+      <file name="clientserver.mshi" />
+      <file name="language.mshi" />
+      <file name="media.mshi" />
+      <file name="noarm.mshi" />
+      <file name="resources.mshi" />
+      <file name="windowsclient.mshi" />
+    </dir>
+  </dir>
+</dir>

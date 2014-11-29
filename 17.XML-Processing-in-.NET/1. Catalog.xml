@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<!--1. Create a XML file representing catalogue. The catalogue should contain albums of 
+different artists. For each album you should define: name, artist, year, producer, 
+price and a list of songs. Each song should be described by title and duration.-->
+<catalog name=".NET Artists' Catalog">
+  
+  <album>
+    <name>Album 1</name>    
+    <artist>Artist 1</artist>
+    <year>2000</year>
+    <producer>Producer 1</producer>
+    <price>10</price>
+    <songs>
+      <song>
+        <title>Song 1 in album 1</title>
+        <duration>11</duration>
+      </song>
+      <song>
+        <title>Song 2 in album 1</title>
+        <duration>21</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album 2</name>
+    <artist>Artist 2</artist>
+    <year>2000</year>
+    <producer>Producer 2</producer>
+    <price>20</price>
+    <songs>
+      <song>
+        <title>Song 1 in album 2</title>
+        <duration>12</duration>
+      </song>
+      <song>
+        <title>Song 2 in album 2</title>
+        <duration>22</duration>
+      </song>
+    </songs>
+  </album>
+  <album>
+    <name>Album 3</name>
+    <artist>Artist 1</artist>
+    <year>2001</year>
+    <producer>Producer 3</producer>
+    <price>30</price>
+    <songs>
+      <song>
+        <title>Song 1 in album 3</title>
+        <duration>13</duration>
+      </song>
+      <song>
+        <title>Song 2 in album 3</title>
+        <duration>23</duration>
+      </song>
+    </songs>
+  </album>
+  
+</catalog>

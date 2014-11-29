@@ -1,0 +1,114 @@
+The explanations in the presentation are good enough!
+
+1.What database models do you know?
+	Hierarchical (tree), Network/graph, Relational (table), Object-oriented
+
+2.Which are the main functions performed by a Relational Database Management System (RDBMS)?
+	- Creating / altering / deleting tables and relationships between them (database schema)
+	- Adding, changing, deleting, searching and retrieving of data stored in the tables
+	- Support for the SQL language
+	- Transaction management (optional)
+
+3.Define what is "table" in database terms.
+	- Database tables consist of data, arranged in rows and columns
+	- All rows have the same structure
+	- Columns have name and type (number, string, date, image, or other)
+	- The schema of a table is an ordered sequence of column specifications (name and type)
+	
+4.Explain the difference between a primary and a foreign key.
+	- Primary key is a column of the table that uniquely identifies its rows, but the foreign key is an identifier of a record located in another table 
+
+5.Explain the different kinds of relationships between tables in relational databases.
+	- Relationship one-to-many (or many-to-one) - A single record in the first table has many corresponding records in the second table
+	- Relationship many-to-many - Records in the first table have many corresponding records in the second one and vice versa. It is implemented through additional table.
+	- Relationship one-to-one - A single record in a table corresponds to a single record in the other table. It is used to model inheritance between tables.
+
+6.When is a certain database schema normalized? What are the advantages of normalized databases?
+	- A data schema is considered to be at the level of normalization of its least normalized entity type.  
+		For example, if all of your entity types are at second normal form (2NF) or higher then we say that your data schema is at 2NF.
+	- Advantages: The advantage of having a highly normalized data schema is that information is stored in one place and one place only,
+		reducing the possibility of inconsistent data. Furthermore, highly-normalized data schemas in general are closer conceptually to object-oriented schemas
+		because the object-oriented goals of promoting high cohesion and loose coupling between classes results in similar solutions (at least from a data point of view).
+		This generally makes it easier to map your objects to your data schema.
+	- Disadvantages: Database normalization comes with a price. The only real drawback to having a highly normalization database structure is that you may need
+		a large number of joins to pull back the records the application needs to function. The fact that the database is usually an
+		application performance bottleneck only aggravates the problem. This will become apparent in environments in which many concurrent users access the database.
+		To help alleviate this issue, application designers denormalize the database design after the normalization process in order to meet the application performance requirements,
+		usually by adding summary and/or redundant data back into the normalized tables.
+	
+7.What are database integrity constraints and when are they used?
+	- Integrity constraints provide a mechanism for ensuring that data conforms to guidelines specified by the database administrator.
+	- Integrity constraints ensure data integrity in the database tables
+		Enforce data rules which cannot be violated
+	- Primary key constraint
+		Ensures that the primary key of a table has unique value for each table row
+	- Unique key constraint
+		Ensures that all values in a certain column (or a group of columns) are unique
+	- Foreign key constraint
+		Ensures that the value in given column is a key from another table
+	- Check constraint
+		Ensures that values in a certain column meet some predefined condition
+
+8.Point out the pros and cons of using indexes in a database.
+	- Pros: Indices speed up searching of values in a certain column or group of columns.
+	- Cons: Adding and deleting records in indexed tables is slower!
+
+9.What's the main purpose of the SQL language?
+	SQL is standardized declarative language for manipulation of relational databases.
+	SQL consists of:
+	DDL – Data Definition Language
+	CREATE, ALTER, DROP commands
+	DML – Data Manipulation Language
+	SELECT, INSERT, UPDATE, DELETE commands
+
+10.What are transactions used for? Give an example.
+	 - Transactions guarantee the consistency and the integrity of the database
+		All changes in a transaction are temporary
+		Changes become final when COMMIT is successfully executed
+		At any time all changes done in the transaction can be canceled by executing ROLLBACK
+		All operations are executed as a single unit
+		Either all of them pass or none of them
+	- Example:
+		A bank transfer from one account into another (withdrawal + deposit)
+		If either the withdrawal or the deposit fails the entire operation should be cancelled
+
+11.What is a NoSQL database?
+	NoSQL (non-relational) databases
+	Use document-based model (non-relational)
+	Schema-free document storage
+	Still support CRUD operations (create, read, update, delete)
+	Still support indexing and querying
+	Still supports concurrency  and transactions
+	Highly optimized for append / retrieve
+	Great performance and scalability
+
+12.Explain the classical non-relational data models.
+	- The non-relational data model would look more like a sheet of paper. In fact, the concept of one entity and all the data that 
+		pertains to that one entity is known in Mongo as a “document”, so truly this is a decent way to think about it.
+	- Document model
+			Set of documents, e.g. JSON strings
+	- Key-value model
+		Set of key-value pairs
+	- Hierarchical key-value
+		Hierarchy of key-value pairs
+	- Wide-column model
+		Key-value model with schema
+	- Object model
+		Set of OOP-style objects
+
+13.Give few examples of NoSQL databases and their pros and cons.
+	- Relational databases
+		Data stored as table rows
+		Relationships between related rows
+		Single entity spans multiple tables
+		RDBMS systems are very mature, rock solid
+	- NoSQL databases
+		Data stored as documents
+		Single entity (document) is a single record
+		Documents do not have a fixed structure
+		
+	- NoSQL databases:
+		Redis - Ultra-fast in-memory data structures server
+		MongoDB - Mature and powerful JSON-document database
+		CouchDB - JSON-based document database with REST API
+		Cassandra - Distributed wide-column database

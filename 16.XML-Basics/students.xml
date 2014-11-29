@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="students.xslt"?>
+<students name="Students" xmlns:students="urn:something.com:ns"
+                xmlns:exams="urn:something.com:ns">
+
+  <student>
+    <name>Pesho</name>
+    <sex>Male</sex>
+    <birthDate>13.07.1922</birthDate>
+    <phone>45464654645</phone>
+    <email>peshoisthebest@pesho.com</email>
+    <course>xml code</course>
+    <specialty>drinking, smoking and...</specialty>
+    <facultyNumber>98786662</facultyNumber>
+    <takenExams>
+      <exam>
+        <name>DSA</name>
+        <tutor>Niki</tutor>
+        <score>3</score>
+      </exam>
+    </takenExams>
+  </student>
+  <student>
+    <name>Mimi</name>
+    <sex>Female</sex>
+    <birthDate>15.09.1992</birthDate>
+    <phone>14537857</phone>
+    <email>mimiishot@mimi.com</email>
+    <course>xml code</course>
+    <specialty>shopping...</specialty>
+    <facultyNumber>234544</facultyNumber>
+    <takenExams>
+      <exam>
+        <name>Databases</name>
+        <tutor>Ivaylo</tutor>
+        <score>3</score>
+      </exam>
+    </takenExams>
+  </student>
+</students>
